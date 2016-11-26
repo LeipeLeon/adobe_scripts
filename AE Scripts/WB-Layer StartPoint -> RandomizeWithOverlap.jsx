@@ -11,7 +11,7 @@
     for (var i = 0; i < effectsGroup.length; i++){
         var mySelectedLayer = effectsGroup[i];
         var layerDuration = effectsGroup[i] .outPoint - effectsGroup[i] .inPoint
-        var newPosition = Math.random() * (totalCompositionDuration);
+        var newPosition = generateRandomNumber() * (totalCompositionDuration);
         effectsGroup[i] .startTime = newPosition;
         if (newPosition > (totalCompositionDuration - layerDuration)) {
             var newLayer = effectsGroup[i].duplicate();            

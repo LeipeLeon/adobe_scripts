@@ -8,7 +8,7 @@
     for (var i = 0; i < effectsGroup.length; i++){
         var mySelectedLayer = effectsGroup[i];
         var layerDuration = effectsGroup[i] .outPoint - effectsGroup[i] .inPoint
-        var newPosition = Math.random() * (totalCompositionDuration - layerDuration);
+        var newPosition = generateRandomNumber() * (totalCompositionDuration - layerDuration);
         effectsGroup[i] .startTime = newPosition; //Math.floor(Math.random()*(time))
     }
 
