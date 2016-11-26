@@ -4,7 +4,6 @@
 {
     var effectsGroup = app.project.activeItem.selectedLayers;
     for (var i = 0; i < effectsGroup.length; i++){
-        effectsGroup[i] .startTime = 0;
+        effectsGroup[i].startTime = 0;
     }
-
 }
